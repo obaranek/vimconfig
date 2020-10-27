@@ -25,6 +25,8 @@ let g:dracula_colorterm = 1
 "OceanicNext
 let g:oceanic_next_terminal_bold = 1
 let g:oceanic_next_terminal_italic = 1
+let g:airline_theme='oceanicnext'
+
 " Nord
 " highlight Normal      cterm=NONE ctermbg=17 gui=NONE guibg=#292f3a
 " highlight LineNr      cterm=NONE ctermbg=17 gui=NONE guibg=#292f3a
