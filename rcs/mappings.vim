@@ -112,7 +112,9 @@ nnoremap <C-p> :Clap gfiles<CR>
 nnoremap <Leader>gp :Clap grep<CR>
 
 "coc-floterm
-nnoremap <leader>tc :CocCommand floaterm.new<CR>
-nnoremap <leader>tn :CocCommand floaterm.next<CR>
-nnoremap <leader>tp :CocCommand floaterm.prev<CR>
-nnoremap <leader>tt :CocCommand floaterm.toggle<CR>
+" Configuration example
+let g:floaterm_keymap_new    = '<A-c>'
+let g:floaterm_keymap_prev   = '<A-p>'
+let g:floaterm_keymap_next   = '<A-n>'
+let g:floaterm_keymap_toggle = '<A-t>'
+
