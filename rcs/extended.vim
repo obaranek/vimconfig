@@ -4,10 +4,10 @@ fun! TrimWhitespace()
     call winrestview(l:save)
 endfun
 
-augroup highlight_yank
-    autocmd!
-    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
-augroup END
+" augroup highlight_yank
+"     autocmd!
+"     autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank()
+" augroup END
 
 autocmd BufWritePre * :call TrimWhitespace()
 

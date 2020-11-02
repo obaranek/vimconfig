@@ -44,7 +44,6 @@ vnoremap <leader>/  :Commentary<CR>
 
 " ClangFormat
 nnoremap <Leader>cf :<C-u>ClangFormat<CR>
-" map to <Leader>cf in C++ code
 autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
@@ -85,7 +84,7 @@ vnoremap <leader>cp    "+p
 vnoremap <leader>cP    "+P
 
 "tabline
-noremap <leader>1 :1tabnext<CR>
+nnoremap <leader>1 :1tabnext<CR>
 nnoremap <leader>2 :2tabnext<CR>
 nnoremap <leader>3 :3tabnext<CR>
 nnoremap <leader>4 :4tabnext<CR>
@@ -98,6 +97,8 @@ nnoremap <leader>9 :9tabnext<CR>
 " nmap <leader>l <Plug>vem_move_buffer_right-
 nmap <leader>bn <Plug>vem_prev_buffer-
 nmap <leader>bp <Plug>vem_next_buffer-
+nnoremap <silent>    <A-x> :BufferClose<CR>
+
 
 "Wildfire
 " This selects the next closest text object.
@@ -118,3 +119,32 @@ let g:floaterm_keymap_prev   = '<A-p>'
 let g:floaterm_keymap_next   = '<A-n>'
 let g:floaterm_keymap_toggle = '<A-t>'
 
+"coc-yank
+nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+
+"coc-clangd
+noremap <leader>ci :CocCommand clangd.symbolInfo<CR>
+
+"barbar
+
+" Magic buffer-picking mode
+nnoremap <silent>      C-s> :BufferPick<CR>
+" Sort automatically by...
+nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
+nnoremap <silent> <Space>bl :BufferOrderByLanguage<CR>
+" Move to previous/next
+nnoremap <silent>    <A-,> :BufferPrevious<CR>
+nnoremap <silent>    <A-.> :BufferNext<CR>
+" Re-order to previous/next
+nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
+nnoremap <silent>    <A->> :BufferMoveNext<CR>
+" Goto buffer in position...
+nnoremap <silent>    <A-1> :BufferGoto 1<CR>
+nnoremap <silent>    <A-2> :BufferGoto 2<CR>
+nnoremap <silent>    <A-3> :BufferGoto 3<CR>
+nnoremap <silent>    <A-4> :BufferGoto 4<CR>
+nnoremap <silent>    <A-5> :BufferGoto 5<CR>
+nnoremap <silent>    <A-6> :BufferGoto 6<CR>
+nnoremap <silent>    <A-7> :BufferGoto 7<CR>
+nnoremap <silent>    <A-8> :BufferGoto 8<CR>
+nnoremap <silent>    <A-9> :BufferLast<CR>

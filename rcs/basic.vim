@@ -49,4 +49,3 @@ autocmd FileType cc,cpp,h,c setlocal ts=2 sts=2 sw=2
 
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-

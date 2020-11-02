@@ -17,13 +17,15 @@ Plug 'tpope/vim-commentary'
 Plug 'voldikss/vim-floaterm'
 Plug 'airblade/vim-gitgutter'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/lib.kom'
 Plug 'romgrk/barbar.nvim'
 Plug 'mhinz/vim-sayonara', { 'on': 'Sayonara' }
 Plug 'gcmt/wildfire.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'liuchengxu/vim-clap'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'romgrk/nvim-treesitter-context'
+Plug 'nvim-treesitter/nvim-treesitter-refactor'
 
 "Themes
 Plug 'gruvbox-community/gruvbox'
@@ -33,21 +35,23 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'morhetz/gruvbox'
 Plug 'sainnhe/gruvbox-material'
-Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'rafi/awesome-vim-colorschemes'
+Plug 'glepnir/oceanic-material'
 Plug 'romgrk/doom-one.vim'
 
 " JS
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'pangloss/vim-javascript'
+" Plug 'maxmellon/vim-jsx-pretty'
+" Plug 'pangloss/vim-javascript'
 Plug 'alvan/vim-closetag'
 Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim'
+" Plug 'mattn/emmet-vim'
 Plug 'yuezk/vim-js'
 
 " C++
 Plug 'rhysd/vim-clang-format'
 Plug 'tpope/vim-surround'
-Plug 'jackguo380/vim-lsp-cxx-highlight'
+" Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'drmikehenry/vim-headerguard'
 Plug 'vim-syntastic/syntastic'
 call plug#end()
+
