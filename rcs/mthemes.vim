@@ -1,6 +1,6 @@
  set background=dark
 "Gruvbox
-let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_contrast_dark = 'hard'
 if exists('+termguicolors')
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
     let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
@@ -24,6 +24,7 @@ let g:oceanic_next_terminal_italic = 1
 "Oceanic Material
 let g:oceanic_material_allow_bold = 0
 let g:oceanic_material_allow_underline = 0
+let g:oceanic_material_background = "deep"
 
 "gruvbox material
 let g:gruvbox_material_background = 'medium'
@@ -32,3 +33,4 @@ let g:gruvbox_improved_warnings = 1
 let g:gruvbox_material_palette = 'mix'
 
 colorscheme gruvbox-material
+" colorscheme oceanic_material
